@@ -1,0 +1,214 @@
+/*
+*
+* @author Pedro Duque
+* @version 1.0
+*
+*/
+
+/* =============== Layout =============== */
+
+html, body, .cover {
+	height: 100%;
+	overflow: auto;
+}
+
+body {
+	background: url('img/capa.png'), 
+				url('img/ruido.png'),
+				linear-gradient(50deg, #ff4169, #7c26f8);
+	background-attachment: fixed;
+	font-family: Helvetica,Arial,sans-serif;
+	overflow-x: hidden; 
+}
+
+/* -- Navigation Bar -- */
+.img-logo {
+	height: 40px;
+	width: 132px;
+	display: block;
+	background: url('img/spotify.svg') no-repeat;
+	background-size: contain;
+	color: transparent;
+}
+
+nav.navbar-transparent {
+	padding: 15px 0px;
+	background: rgba(0, 0, 0, 0.6);
+	border: none;
+}
+
+.navbar-brand {
+	padding: 5px 15px;
+}
+
+.divider {
+	width: 1px;
+	height: 16px;
+	background: white;
+	margin: 17px 18px;
+}
+
+.navbar-inverse .navbar-nav>li>a, footer .nav a {
+	color: white;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover, footer .nav a:hover {
+	color: #9bf0e1;
+	background: none;
+}
+
+/* -- Cover Image -- */
+.cover {
+	display: table;
+	width: 100%;
+}
+
+.cover-text {
+	text-align: center;
+	color: white;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+/* -- Cover Buttons -- */
+.btn-custom {
+	color: white;
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	text-transform: uppercase;
+	transition: background 0.4s, color 0.4s;
+}
+
+.btn-purple {
+	background: #7c25f8;
+}
+
+.btn-purple:hover {
+	background-color: #6207e3;
+	color: white;
+}
+
+.btn-white {
+	border: 2px solid white;
+}
+
+.btn-white:hover {
+	background-color: white;
+	color: black;
+}
+
+/* -- Services Section "Content" -- */
+#services {
+	background: white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.albuns {
+	padding: 10px 0px 10px 0px;
+}
+
+/* -- Resources Section "Content" -- */
+#resources {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: white;
+}
+
+.rotation {
+	transform: rotate(30deg);
+	-ms-transform: rotate(30deg); /* IE9 */
+	-webkit-transform: rotate(30deg); /* Chrome, Safari, Opera */
+	padding-left: 80px;
+}
+
+/* -- Footer -- */
+footer {
+	background: #000;
+	padding: 50px 0px 20px 0px;
+	position: relative;
+}
+
+.item-social-network {
+	float: right;
+}
+
+/* =============== Typography =============== */
+h1 {
+	font-weight: 900px;
+	letter-spacing: -4px;
+	margin-bottom: 50px;
+}
+
+h2 {
+	font-size: 50px;
+	font-weight: 700px;
+	letter-spacing: -0.04em;
+}
+
+h3 {
+	font-size: 35px;
+	font-weight: 700px;
+	letter-spacing: -0.04em;
+}
+
+#footer h4 {
+	color: #919196;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+#services h2, #services h3 {
+	color: #7c25f8;
+}
+
+#resources h3 {
+	color: #9bf0e1;
+}
+
+/* =============== Media Queries =============== */
+/* -- xs < 768 -- */
+@media screen and (max-width: 767px) {
+	h1 {
+		font-size: 50px;
+	}
+	.btn-custom {
+		margin: 10px 15px;
+		padding: 10px 50px;
+	}
+}
+
+/* -- sm -- */
+@media screen and (min-width: 767px) {
+	h1 {
+		font-size: 70px;
+	}
+	.btn-custom {
+		margin: 0px 15px;
+		padding: 10px 50px;
+	}
+}
+
+/* -- md -- */
+@media screen and (min-width: 992px) {
+	h1 {
+		font-size: 80px;
+	}
+	.btn-custom {
+		margin: 0px 15px;
+		padding: 10px 50px;
+	}
+}
+
+/* -- sm -- */
+@media screen and (min-width: 1200px) {
+	h1 {
+		font-size: 100px;
+	}
+	.btn-custom {
+		margin: 0px 15px;
+		padding: 10px 50px;
+	}
+}
+/* =============== End Media Queries =============== */
